@@ -1,0 +1,29 @@
+- Create an issue & assign team member(s)
+- Making a change
+  * `git checkout master`,
+    `git pull` to sync up with master,
+    `git checkout -b feature-name-here` and start working!
+  * Branch by feature, not person
+  * Make sure your PRs are small/contained (to avoid merge conflicts)
+- Commit often and commit well
+ *** AGREE ON CONVENTIONS ***
+  - File structure
+  - Style guide
+  - Commit messages
+    * labels: 'fix', 'refactor', 'chore', 'feat', etc.
+    * "Impertive": 'change project name' vs. 'changed' or 'changes'
+    * JUST BE CONSISTENT
+- Creating a PR
+  * `git checkout master`,
+    `git pull` to sync up,
+    `git checkout branch-name`,
+    `git merge master` (making sure there's no conflicts),
+    `git push -u origin branch-name`
+  * Go to github, start a PR, give it a sensible name * description
+  * 'Closes #issue-number' helps sync with waffle automatically
+  * CODE REVIEWS
+    - At least 2 sets of eyes on every line of code
+    - Avoid merging your own PRs
+  * Once merged, clean up branches (both remote & local)
+- Updates to master!
+  * checkout, pull, checkout back out, merge
